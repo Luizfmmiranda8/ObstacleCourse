@@ -12,7 +12,7 @@ public class PlayerMovement : MonoBehaviour
     #region EVENTS
     void Start() 
     {
-        
+
     }
 
     void Update() 
