@@ -5,6 +5,7 @@ using UnityEngine;
 public class Scorer : MonoBehaviour
 {
     #region VARIABLES
+    [Header("Hit Count")]
     int hits = 0;
     #endregion
 
@@ -18,8 +19,11 @@ public class Scorer : MonoBehaviour
     #region METHODS
     void StartCollision(Collision other)
     {
-        hits++;
-        Debug.Log("You bumped into a thing this many times: " + hits);
+        if(other.gameObject.tag != "Hit")
+        {
+            hits++;
+            Debug.Log("You bumped into a thing this many times: " + hits);
+        }
     }
     #endregion
 }

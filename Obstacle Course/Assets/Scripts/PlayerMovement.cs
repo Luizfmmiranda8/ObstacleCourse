@@ -10,11 +10,6 @@ public class PlayerMovement : MonoBehaviour
     #endregion
 
     #region EVENTS
-    void Start() 
-    {
-
-    }
-
     void Update() 
     {
         MovePlayer();
